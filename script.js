@@ -8,16 +8,15 @@ const tbody = table.createTBody();
 const year = new Date().getFullYear();
 h1.innerText = year.toString();
 
+// Layout mode variable
+const layoutMode = "monthsTop"; // "monthsTop" or "monthsLeft"
+
 // Function to get the number of days in a month
 function getDaysInMonth(year, month) {
     return new Date(year, month, 0).getDate();
 }
 
-// Months abbreviation
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
-// Layout mode variable
-const layoutMode = "monthsLeft"; // Change to "monthsLeft" for the other layout
 
 if (layoutMode === "monthsTop") {
   table.classList.add('months-top');
