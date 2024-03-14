@@ -9,11 +9,9 @@ body {
   height: calc(100vh - 10px);
   gap: 10px;
 }
-
 h1 {
   margin: 0;
 }
-
 table {
   width: 100%; /* Adjust this to change the table width */
   table-layout: fixed;
@@ -22,26 +20,29 @@ table {
   font-size: 12px;
   flex-grow: 1;
 }
-
 th {
   text-align: center;
   background-color: #f2f2f2; /* Adds a background color to the table headers */
   font-weight: 400;
   text-transform: uppercase;
 }
-
 th, td {
   border: 1px solid black; /* Adds border to table header and cells */
   padding: 8px;
   font-size: 10px;
   vertical-align: top;
 }
-
 td {
   padding: 2px 4px;
 }
-
-/* This ensures each column has the same width */
 col {
   width: calc(100% / 12);
+}
+
+table.months-left {
+  text-align: center;
+}
+table.months-left th {
+  padding: 0;
+  vertical-align: middle;
 }
